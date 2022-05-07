@@ -53,7 +53,7 @@ body{
     margin: 0.5rem 0;
 }
 
-.ratings .rating {
+.ratings div[id^="r_"] {
     display: flex;
     width: 3rem;
     height: 3rem;
@@ -68,7 +68,7 @@ body{
     cursor: pointer;
 }
 
-.ratings .rating:hover {
+.ratings div[id^="r_"]:hover {
     color: white;
     background-color: hsl(25, 97%, 53%);
 }
@@ -93,4 +93,44 @@ body{
 .btn-submit:hover {
     background-color: white;
     color: hsl(25, 97%, 53%);
+}
+
+.submit-view {    
+    display: none;
+    transition: all 1s ease;
+}
+
+.result-banner{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.rating-results{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.rating-results span{
+    width: auto;
+    padding: 0.5rem 1rem;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(210, 9%, 13%, 0.5);
+    font-size: 15px;
+    border-radius: 1rem;
+}
+
+.result-description {
+    text-align: center;
+}
+
+.result-description h2 {
+    color: white;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.result-description p {
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    font-size: 15px;
 }
